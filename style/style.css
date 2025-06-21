@@ -15,6 +15,9 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--bgBody);
@@ -51,6 +54,11 @@ body {
     color: var(--txtMain);
     border-bottom: 1px solid;
 }
+
+.main-title {
+    margin: 20px;
+}
+
 .main {
     max-width: 75vw;
     margin: auto;
@@ -86,13 +94,38 @@ body {
     font-size: 3rem;
 }
 
-.desc_avatar h3, a {
+.desc_avatar h3 {
     color: var(--emphasisColor);
+}
+
+.desc_avatar a {
+    color: white;
+    font-weight: bold;
     text-decoration: none;
+}
+
+.desc_avatar a:hover {
+    text-decoration: underline;
 }
 
 .desc_avatar p {
     color: var(--txtSecondary);
+}
+
+.cont-cont-tecnologias {
+    margin: 80px auto 20px auto;
+}
+
+.more {
+    margin: 60px auto;
+    max-width: 75vw;
+    text-align: center;
+    transition: ease .3s;
+}
+
+.more:hover {
+    transform: translateY(20px) scale(1.1);
+    cursor: pointer;
 }
 
 .cont_tecnologias {
@@ -102,6 +135,7 @@ body {
     border-radius: 20px;
     padding: 14px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 8px;
 }
@@ -122,11 +156,6 @@ body {
     max-width: 40%;
 }
 
-.tec-item:hover {
-    box-shadow: rgba(0, 0, 0, 0.473) 0 1px 30px;
-    transform: scale(1.05);
-    cursor: pointer;
-}
 
 .cont_projetos {
     max-width: 75vw;
@@ -134,9 +163,10 @@ body {
     color: var(--txtSecondary);
 }
 
-.cont_projetos .title {
+.title {
     color: var(--txtMain);
     text-align: center;
+    padding-top: 50px;
 }
 
 .projetos-itens {
@@ -177,4 +207,47 @@ body {
 
 .projeto-item a:hover{
     text-decoration: underline;
+}
+
+.cont_contato {
+    background-color: black;
+    margin-top: 30px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.contato-item {
+    background-color: var(--emphasisColor);
+    color: var(--txtMain);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.contato-item a {
+    color: var(--txtMain);
+    font-weight: bold;
+}
+
+.contato-item h3 {
+    font-size: 1.6rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infos {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #524798;
+    text-align: center;
 }
