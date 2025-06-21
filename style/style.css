@@ -25,6 +25,11 @@ body {
 }
 
 .header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
     padding: 8px;
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +61,7 @@ body {
 }
 
 .main-title {
-    margin: 20px;
+    margin: 80px;
 }
 
 .main {
@@ -92,10 +97,6 @@ body {
 .desc_avatar h2 {
     color: var(--txtMain);
     font-size: 3rem;
-}
-
-.desc_avatar h3 {
-    color: var(--emphasisColor);
 }
 
 .desc_avatar a {
@@ -172,7 +173,7 @@ body {
 .projetos-itens {
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 14px;
 }
 
@@ -181,7 +182,7 @@ body {
 }
 
 .projeto-item img{
-    max-width: 60%;
+    max-width: 100%;
     border-radius: 8px;
 }
 
@@ -191,15 +192,15 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .projeto-item a{
     color: var(--txtMain);
     background-color: var(--emphasisColor);
     font-weight: bold;
-    font-size: 1.2rem;
     padding: 4px;
     border-radius: 4px;
     margin-right: 14px;
@@ -250,4 +251,96 @@ body {
     padding-bottom: 20px;
     color: #524798;
     text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    .header {
+        justify-content: space-around;
+    }
+    
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    .desc_avatar h2 {
+        font-size: 2rem;
+    }
+
+    .cont_avatar {
+        flex-direction: column;
+    }
+
+    .imgmore {
+        width: 30px;
+    }
+
+    .more:active {
+        transform: translateY(20px) scale(1.1);
+    }
+
+    .tec-item {
+        max-width: 55px;
+    }
+
+    .projetos-itens {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projeto-links {
+        display: flex;
+        text-align: center;
+    }
+
+    .contatos {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .contato-item {
+        padding: 8px;
+    }
+
+    .contato-item h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-title {
+        margin: 0px;
+    }
+
+    .main {
+        max-width: 90vw ;
+    }
+
+    .cont_avatar img{
+        width: 55%;
+    }
+
+    .desc_avatar p{
+        font-size: .9rem;
+    }
+
+    .desc_avatar h2 {
+        font-size: 1.5rem;
+    }
+
+    .cont_tecnologias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .projetos-itens {
+        grid-template-columns: 1fr;
+    }
+
+    .infos {
+        font-size: .6rem;
+    }
 }
