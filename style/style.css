@@ -15,6 +15,14 @@
     padding: 0;
 }
 
+.none {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -52,13 +60,25 @@ body {
     text-decoration: none;
     color: var(--txtSecondary);
     font-size: 1.3rem;
-    transition-duration: 600ms;
+    transition: .3s;
+}
+
+a.news {
+    color: var(--emphasisColor);
+}
+
+a.news:hover {
+    color: white;
 }
 
 .menu a:hover {
     color: var(--txtMain);
     border-bottom: 1px solid;
 }
+
+.btn_menu {
+        display: none;
+    }
 
 .main-title {
     margin: 80px;
@@ -115,6 +135,13 @@ body {
 
 .cont-cont-tecnologias {
     margin: 80px auto 20px auto;
+}
+
+.btngit {
+    display: flex;
+    background-color: var(--emphasisColor);
+    padding: 4px;
+    border-radius: 8px;
 }
 
 .more {
@@ -217,20 +244,20 @@ body {
 
 .contatos {
     display: flex;
-    justify-content: space-between;
-    max-width: 75vw;
-    margin: auto;
+    justify-content: center;
     padding: 20px;
 }
 
 .contato-item {
     background-color: var(--emphasisColor);
     color: var(--txtMain);
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-radius: 14px;
+    align-content: center;
+    border-radius: 8px;
 }
 
 .contato-item a {
@@ -310,7 +337,39 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .btn_menu {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn_menu:active {
+        opacity: .7;
+    }
+
     .main-title {
         margin: 0px;
     }
@@ -341,6 +400,6 @@ body {
     }
 
     .infos {
-        font-size: .6rem;
+        font-size: .7rem;
     }
 }
