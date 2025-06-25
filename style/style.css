@@ -137,8 +137,14 @@ a.news:hover {
     margin: 80px auto 20px auto;
 }
 
-.btngit {
+.linksUteis {
+    width: 40vw;
     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btngit {
     background-color: var(--emphasisColor);
     padding: 4px;
     border-radius: 8px;
@@ -301,6 +307,10 @@ a.news:hover {
         flex-direction: column;
     }
 
+    .linksUteis {
+        width: 75vw;
+    }
+
     .imgmore {
         width: 30px;
     }
@@ -338,6 +348,10 @@ a.news:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+    
     .nav {
         display: none;
         position: absolute;
@@ -364,6 +378,7 @@ a.news:hover {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        margin-right: 20px;
     }
 
     .btn_menu:active {
@@ -388,6 +403,10 @@ a.news:hover {
 
     .desc_avatar h2 {
         font-size: 1.5rem;
+    }
+
+    .linksUteis {
+        width: 90vw;
     }
 
     .cont_tecnologias {
