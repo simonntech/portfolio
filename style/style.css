@@ -48,6 +48,15 @@ body {
     width: 150px;
 }
 
+.btnLinguas {
+    background-color: var(--emphasisColor);
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
 .menu {
     display: flex;
     list-style: none;

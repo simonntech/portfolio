@@ -11,13 +11,15 @@
     <header class="header">
         <a href="index.html"><img class="logo" src="imgs/logo.png" alt="logo escrito SIMONtech"></a>
 
+        <button id="langToggle" class="btnLinguas" data-i18n="eng">English</button>
+
         <nav class="nav" id="nav_menu">
             <ul class="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://simonntechnews.rf.gd" target="_blank" class="news">Notícias Tech</a></li>
+                <li><a href="#sobre" data-i18n="sobre">Sobre</a></li>
+                <li><a href="#tecnologias" data-i18n="tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos" data-i18n="projetos">Projetos</a></li>
+                <li><a href="#contato" data-i18n="contato">Contato</a></li>
+                <li><a href="https://simonntechnews.rf.gd" target="_blank" class="news" data-i18n="noticias">Notícias Tech</a></li>
             </ul>
         </nav>
         <button class="btn_menu" onclick="toggleMenu()">
@@ -32,12 +34,12 @@
         <div class="cont_avatar">
             <img src="imgs/perfil.png">
             <div class="desc_avatar">
-                <h2 class="avatar_name">QUEM SOU EU?</h2>
-                <p>Oi! Eu sou o Bruno, desenvolvedor WEB, estudante de Desenvolvimento de Sistemas na <a href="https://fundacaofat.org.br/" target="_blank">Fundação FAT</a>, e Engenharia de Software na <a href="https://www.ampli.com.br/">AMPLI</a>.</p>
-                <p>Atuei como Designer Gráfico Freelancer entre 2016 e 2021, e Ilustrador freelancer desde 2017 até 2022, e até então como hobbie. Com essa bagagem artística, meu foco no desenvolvimento é no <em>front-end</em>, trazendo conceitos do Design e da Arte, para deixar os sites e sistemas mais agradáveis.</p>
-                <p>Sigo com estudos dos conhecimentos de <em>back-end</em> e banco de dados para me tornar um <em>Desenvolver Fullstack</em> Javascript, através de bibliotecas e frameworks mais robustos, como <em>React JS, NODE JS</em> e etc...</p>
-                <p>Consigo também entregar soluções mais rápidas e completas através de sistemas alternativos como Wordpress para gerenciamento de conteúdos.</p>
-                <div class="linksUteis"><a href="https://github.com/simonntech" class="btngit" target="_blank">Meu Github</a> <a href="https://www.linkedin.com/in/brunosimonferreira/" class="btngit" target="_blank">Meu LinkedIn</a></div>
+                <h2 class="avatar_name" data-i18n="quem_sou">QUEM SOU EU?</h2>
+                <p data-i18n="apresentacao">Oi! Eu sou o Bruno, desenvolvedor WEB, estudante de Desenvolvimento de Sistemas na <a href="https://fundacaofat.org.br/" target="_blank">Fundação FAT</a>, e Engenharia de Software na <a href="https://www.ampli.com.br/">AMPLI</a>.</p>
+                <p data-i18n="atuacao">Atuei como Designer Gráfico Freelancer entre 2016 e 2021, e Ilustrador freelancer desde 2017 até 2022, e até então como hobbie. Com essa bagagem artística, meu foco no desenvolvimento é no <em>front-end</em>, trazendo conceitos do Design e da Arte, para deixar os sites e sistemas mais agradáveis.</p>
+                <p data-i18n="backend">Sigo com estudos dos conhecimentos de <em>back-end</em> e banco de dados para me tornar um <em>Desenvolver Fullstack</em> Javascript, através de bibliotecas e frameworks mais robustos, como <em>React JS, NODE JS</em> e etc...</p>
+                <p data-i18n="wordpress">Consigo também entregar soluções mais rápidas e completas através de sistemas alternativos como Wordpress para gerenciamento de conteúdos.</p>
+                <div class="linksUteis"><a href="https://github.com/simonntech" class="btngit" target="_blank">Github</a> <a href="https://www.linkedin.com/in/brunosimonferreira/" class="btngit" target="_blank">LinkedIn</a></div>
             </div>
         </div>
     </div>
@@ -47,33 +49,33 @@
     </div>
 
     <div class="cont-cont-tecnologias" id="tecnologias">
-            <h2 class="title">TECNOLOGIAS</h2>
+            <h2 class="title" data-i18n="tecnologiasM">TECNOLOGIAS</h2>
         <div class="cont_tecnologias">
-            <div class="tec-item" title="Linguagem de Marcação de Texto Fundamental para Desenvolvimento Front-end">
+            <div class="tec-item">
                 <img src="imgs/html.png" alt="Logo HTML-5">
                 <h3 class="tec-item-title">HTML</h3>
             </div>
-            <div class="tec-item" title="Linguagem de Estilização Fundamental para Desenvolvimento Front-end">
+            <div class="tec-item">
                 <img src="imgs/css.png" alt="Logo CSS-3">
                 <h3 class="tec-item-title">CSS</h3>
             </div>
-            <div class="tec-item" title="Linguagem de Programação Para Interação do Fron-end">
+            <div class="tec-item">
                 <img src="imgs/js.png" alt="Logo Javascript">
                 <h3 class="tec-item-title">Javascript</h3>
             </div>
-            <div class="tec-item" title="Biblioteca de estilização CSS para criação rápida de Front-end, para apresentação de MVPs e etc...">
+            <div class="tec-item">
                 <img src="imgs/bootstrap.png" alt="Logo Bootstrap">
                 <h3 class="tec-item-title">Bootstrap</h3>
             </div>
-            <div class="tec-item" title="Fundamentos e Conceitos do Design Gráfico para um melhor visual do Front-end">
+            <div class="tec-item">
                 <img src="imgs/design.png" alt="Logo Caneta Design Gráfico">
-                <h3 class="tec-item-title">Design Gráfico</h3>
+                <h3 class="tec-item-title" data-i18n="design">Design Gráfico</h3>
             </div>
-            <div class="tec-item" title="Node JS é um ambiente onde o Javascript pode ser rodado nos servidores, ferramente muito poderosa no mundo da programação moderna">
+            <div class="tec-item">
                 <img src="imgs/nodejs.png" alt="Logo NodeJS">
                 <h3 class="tec-item-title">Node JS</h3>
             </div>
-            <div class="tec-item" title="Gerenciador de conteúdos para sites como Portais de Notícias, Blogs, Lojas de Compra Online, etc..">
+            <div class="tec-item">
                 <img src="imgs/wordpress.png" alt="Logo Wordpress">
                 <h3 class="tec-item-title">Wordpress</h3>
             </div>
@@ -81,48 +83,48 @@
     </div>
 
     <div class="cont_projetos" id="projetos">
-        <h2 class="title">PROJETOS</h2>
+        <h2 class="title" data-i18n="projetosM">PROJETOS</h2>
         <div class="projetos-itens">
             <div class="projeto-item">
                 <div class="projeto-tile">
-                    <h3>Stickers</h3>
+                    <h3 data-i18n="figurinhas">Figurinhas</h3>
                     <img src="imgs/01-stickers.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>O usuário pode gerar uma figurinha para exportar e salvar no dispositivo e usar como figurinha de Whatsapp.</p>
-                    <p>Foco do estudo: manipulação do DOM através do JS, CSS e importação de biblioteca JS para exportar o resultado.</p>
+                    <p data-i18n="figdesc">O usuário pode gerar uma figurinha para exportar e salvar no dispositivo e usar como figurinha de Whatsapp.</p>
+                    <p data-i18n="figfoco">Foco do estudo: manipulação do DOM através do JS, CSS e importação de biblioteca JS para exportar o resultado.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/stickers/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/stickers" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/stickers/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/stickers" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
                 <div class="projeto-title">
-                    <h3>Relógio Digital</h3>
+                    <h3 data-i18n="relogio_digital">Relógio Digital</h3>
                     <img src="imgs/02-relogiodigital.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Um relógio digital simples, com fundo e mensagem de saudação interativos conforme o horário.</p>
-                    <p>Foco do estudo: manipulação do DOM através do JS, CSS, e condicionais dentro do JS.</p>
+                    <p data-i18n="reldesc">Um relógio digital simples, com fundo e mensagem de saudação interativos conforme o horário.</p>
+                    <p data-i18n="relfoco">Foco do estudo: manipulação do DOM através do JS, CSS, e condicionais dentro do JS.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/relogioDigital/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/relogioDigital" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/relogioDigital/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/relogioDigital" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
                 <div class="projeto-title">
-                    <h3>Tempo Agora</h3>
+                    <h3 data-i18n="tempo">Tempo Agora</h3>
                     <img src="imgs/03-tempoagora.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Site para consultar o clima e tempo na cidade que o usuário digitar.</p>
-                    <p>Foco do estudo: manipulação do DOM através do JS e CSS, e consumo de API de consulta de tempo na cidade consultada.</p>
+                    <p data-i18n="temdesc">Site para consultar o clima e tempo na cidade que o usuário digitar.</p>
+                    <p data-i18n="temfoco">Foco do estudo: manipulação do DOM através do JS e CSS, e consumo de API de consulta de tempo na cidade consultada.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/tempoAgora/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/tempoAgora" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/tempoAgora/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/tempoAgora" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
@@ -131,12 +133,12 @@
                     <img src="imgs/04-jokenpo.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Jogo interativo de pedra, papel e tesoura, onde o resultado sempre vai ser diferente, e o usuário pode ter chances reais de perdas e ganhos.</p>
-                    <p>Foco do estudo: manipulação do DOM através do JS e CSS, com condicional como lógica no JS para gerar o sorteio de escolha que a máquina joga.</p>
+                    <p data-i18n="jokendesc">Jogo interativo de pedra, papel e tesoura, onde o resultado sempre vai ser diferente, e o usuário pode ter chances reais de perdas e ganhos.</p>
+                    <p data-i18n="jokenfoco">Foco do estudo: manipulação do DOM através do JS e CSS, com condicional como lógica no JS para gerar o sorteio de escolha que a máquina joga.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/jhowKenPow/" target="_blank">Link para jogar</a>
-                    <a href="https://github.com/simonntech/jhowKenPow" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/jhowKenPow/" target="_blank" data-i18n="link">Link para jogar</a>
+                    <a href="https://github.com/simonntech/jhowKenPow" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
@@ -145,12 +147,12 @@
                     <img src="imgs/05-mycats.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Uma lista interativa estilo "coisas à fazer", porém com nomes de gatos que podem ser excluídos e alterados.</p>
-                    <p>Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
+                    <p data-i18n="catsdesc">Uma lista interativa estilo 'coisas à fazer', porém com nomes de gatos que podem ser excluídos e alterados.</p>
+                    <p data-i18n="catsfoco">Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/myCats/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/myCats" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/myCats/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/myCats" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
@@ -159,12 +161,12 @@
                     <img src="imgs/06-mydogs.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Uma lista interativa estilo "coisas à fazer", porém com nomes de cachorros que podem ser excluídos e alterados.</p>
-                    <p>Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
+                    <p data-i18n="dogsdesc">Uma lista interativa estilo 'coisas à fazer', porém com nomes de cachorros que podem ser excluídos e alterados.</p>
+                    <p data-i18n="dogsfoco">Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/myDogs/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/myDogs" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/myDogs/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/myDogs" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
@@ -173,12 +175,12 @@
                     <img src="imgs/07-lotogen.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Sisteminha para criação e gerenciamento de números de jogos da Loteria mais famosos, como Mega-Sena, Quina e Lotomania. O usuário também pode salvar os jogos localmente no navegador.</p>
-                    <p>Foco do estudo: Javascript avançado, com modulação de funções, criação de listas e uso do método LocalStorage para armazenar conteúdo no próprio navegador do usuário, dispensando uso de API e banco de dados.</p>
+                    <p data-i18n="lotodesc">Sisteminha para criação e gerenciamento de números de jogos da Loteria mais famosos, como Mega-Sena, Quina e Lotomania. O usuário também pode salvar os jogos localmente no navegador.</p>
+                    <p data-i18n="lotofoco">Foco do estudo: Javascript avançado, com modulação de funções, criação de listas e uso do método LocalStorage para armazenar conteúdo no próprio navegador do usuário, dispensando uso de API e banco de dados.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntech.github.io/lotoGen/" target="_blank">Link para acessar</a>
-                    <a href="https://github.com/simonntech/lotoGen/tree/main" target="_blank">Repositório do Github</a>
+                    <a href="https://simonntech.github.io/lotoGen/" target="_blank" data-i18n="link">Link para acessar</a>
+                    <a href="https://github.com/simonntech/lotoGen/tree/main" target="_blank" data-i18n="github">Repositório do Github</a>
                 </div>
             </div>
             <div class="projeto-item">
@@ -187,17 +189,17 @@
                     <img src="imgs/08-portal.jpg">
                 </div>
                 <div class="projeto-desc">
-                    <p>Portal de notícias sobre tecnologia, com conteúdos periódicos. Case para gerenciamento de conteúdo rápido através de Wordpress.</p>
-                    <p>Foco do estudo: gerenciamento de conteúdo e temas de customização de Wordpress.</p>
+                    <p data-i18n="newsdesc">Portal de notícias sobre tecnologia, com conteúdos periódicos. Case para gerenciamento de conteúdo rápido através de Wordpress.</p>
+                    <p data-i18n="newsfoco">Foco do estudo: gerenciamento de conteúdo e temas de customização de Wordpress.</p>
                 </div>
                 <div class="projeto-links">
-                    <a href="https://simonntechnews.rf.gd/" target="_blank">Link para acessar</a>
+                    <a href="https://simonntechnews.rf.gd/" target="_blank" data-i18n="link">Link para acessar</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="title">CONTATO</h2>
+    <h2 class="title" data-i18n="contatoM">CONTATO</h2>
     <div class="cont_contato" id="contato">
         <div class="contatos">
                 <div class="contato-item">
@@ -205,7 +207,7 @@
                         <h3><img src="imgs/email.png">E-mail</h3>
                     </a>
                     <a href="https://www.instagram.com/simonn.tech/" target="_blank">
-                        <h3><img src="imgs/instagram.png">Siga no Instagram</h3>
+                        <h3><img src="imgs/instagram.png">Instagram</h3>
                     </a>
                     <a href="https://wa.link/zcwy8c" target="_blank">
                         <h3><img src="imgs/whatsapp.png"> Whatsapp</h3>
@@ -213,7 +215,7 @@
                 </div>
         </div>
         <div class="infos">
-            <p>&copy;<em>Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2025</em></p>
+            <p>&copy;<em data-i18n="rodape">Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2025</em></p>
         </div>
     </div>
 
