@@ -3,219 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMON.tech</title>
+    <meta name="description" content="Portfólio de Bruno Simon - Desenvolvedor Web e Designer.">
+    <title>SIMON.tech | Bruno Simon</title>
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img class="logo" src="imgs/logo.png" alt="logo escrito SIMONtech"></a>
+        <a href="index.html"><img class="logo" src="imgs/logo.png" alt="Logo SIMONtech"></a>
 
-        <button id="langToggle" class="btnLinguas" data-i18n="eng">English</button>
+        <button id="langToggle" class="btnLinguas" aria-label="Trocar idioma">English</button>
 
         <nav class="nav" id="nav_menu">
             <ul class="menu">
-                <li><a href="#sobre" data-i18n="sobre">Sobre</a></li>
-                <li><a href="#tecnologias" data-i18n="tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos" data-i18n="projetos">Projetos</a></li>
-                <li><a href="#contato" data-i18n="contato">Contato</a></li>
-                <li><a href="https://simonntechnews.rf.gd" target="_blank" class="news" data-i18n="noticias">Notícias Tech</a></li>
+                <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="#tecnologias" data-i18n="nav_tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
+                <li><a href="https://simonntechnews.rf.gd" target="_blank" class="news" data-i18n="nav_noticias">Notícias Tech</a></li>
             </ul>
         </nav>
-        <button class="btn_menu" onclick="toggleMenu()">
-            <img src="imgs/menu.png">
+        <button class="btn_menu" onclick="toggleMenu()" aria-label="Abrir menu">
+            <img src="imgs/menu.png" alt="Ícone de menu">
         </button>
     </header>
 
-    <div class="main-title" id="sobre">
-            <h2 class="title"></h2>
-        </div>
-    <div class="main">
-        <div class="cont_avatar">
-            <div class="desc_avatar">
-                <h2 class="avatar_name" data-i18n="quem_sou">SOBRE MIM</h2>
-                <p data-i18n="apresentacao">Desenvolvedor de Sistemas, estudante de Engenharia de Software na <a href="https://www.ampli.com.br/">AMPLI</a>.</p>
-                <p data-i18n="atuacao">Atuei como Designer Gráfico Freelancer entre 2016 e 2021, e Ilustrador freelancer desde 2017 até 2022, mas mantenho a arte como hobby.</p>
-                <p data-i18n="backend">Sigo com estudos dos conhecimentos de <em>back-end</em> e banco de dados para me tornar um <em>Desenvolver Fullstack</em> Javascript e Typescript, através de bibliotecas e frameworks mais robustos.</p>
-                <p data-i18n="wordpress">Consigo também entregar soluções mais rápidas e completas através de sistemas alternativos como Wordpress para gerenciamento de conteúdos.</p>
-                <div class="linksUteis"><a href="https://github.com/simonntech" class="btngit" target="_blank">Confira meu Github</a></div>
+    <main class="main-container">
+        <section id="sobre" class="section-sobre">
+            <div class="cont_avatar">
+                <div class="desc_avatar">
+                    <h1 class="avatar_name" data-i18n="titulo_sobre">SOBRE MIM</h1>
+                    
+                    <p data-i18n="bio_intro">Olá! Sou o <strong>Bruno Simon</strong>, um entusiasta da tecnologia trilhando o caminho do desenvolvimento WEB.</p>
+                    
+                    <p data-i18n="bio_background">Minha jornada começou na arte, atuando como Designer Gráfico e Ilustrador. Hoje, trago essa bagagem visual para o <em>Front-end</em>, criando interfaces agregando valor.</p>
+                    
+                    <p data-i18n="bio_estudos">Atualmente, sou aluno do curso de Engenharia de Software. Meu foco é me tornar um <em>Fullstack</em> completo, dominando o universo Javascript (React, Node.js) e bancos de dados.</p>
+                    
+                    <p data-i18n="bio_extra">Também desenvolvo soluções ágeis utilizando WordPress para gerenciamento de conteúdo.</p>
+                    
+                    <div class="linksUteis">
+                        <a href="https://github.com/simonntech" class="btngit" target="_blank" data-i18n="btn_github">Confira meu Github</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+            
+            <div class="more">
+                <a href="#tecnologias" aria-label="Ir para tecnologias"><img src="imgs/setamais.png" class="imgmore" alt="Seta para baixo"></a>
+            </div>
+        </section>
 
-    <div class="more">
-        <a href="#tecnologias"><img src="imgs/setamais.png" class="imgmore"></a>
-    </div>
+        <section id="tecnologias" class="cont-cont-tecnologias">
+            <h2 class="title" data-i18n="titulo_tecnologias">TECNOLOGIAS</h2>
+            <div class="cont_tecnologias">
+                <div class="tec-item">
+                    <img src="imgs/html.png" alt="Logo HTML-5">
+                    <h3>HTML</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/css.png" alt="Logo CSS-3">
+                    <h3>CSS</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/js.png" alt="Logo Javascript">
+                    <h3>Javascript</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/bootstrap.png" alt="Logo Bootstrap">
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/design.png" alt="Ícone Design Gráfico">
+                    <h3 data-i18n="tec_design">Design Gráfico</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/nodejs.png" alt="Logo NodeJS">
+                    <h3>Node JS</h3>
+                </div>
+                <div class="tec-item">
+                    <img src="imgs/wordpress.png" alt="Logo Wordpress">
+                    <h3>Wordpress</h3>
+                </div>
+            </div>
+        </section>
 
-    <div class="cont-cont-tecnologias" id="tecnologias">
-            <h2 class="title" data-i18n="tecnologiasM">TECNOLOGIAS</h2>
-        <div class="cont_tecnologias">
-            <div class="tec-item">
-                <img src="imgs/html.png" alt="Logo HTML-5">
-                <h3 class="tec-item-title">HTML</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/css.png" alt="Logo CSS-3">
-                <h3 class="tec-item-title">CSS</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/js.png" alt="Logo Javascript">
-                <h3 class="tec-item-title">Javascript</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/bootstrap.png" alt="Logo Bootstrap">
-                <h3 class="tec-item-title">Bootstrap</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/design.png" alt="Logo Caneta Design Gráfico">
-                <h3 class="tec-item-title" data-i18n="design">Design Gráfico</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/nodejs.png" alt="Logo NodeJS">
-                <h3 class="tec-item-title">Node JS</h3>
-            </div>
-            <div class="tec-item">
-                <img src="imgs/wordpress.png" alt="Logo Wordpress">
-                <h3 class="tec-item-title">Wordpress</h3>
-            </div>
-        </div>
-    </div>
+        <section id="projetos" class="cont_projetos">
+            <h2 class="title" data-i18n="titulo_projetos">PROJETOS</h2>
+            <div class="projetos-itens">
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3 data-i18n="proj_figurinhas_titulo">Figurinhas</h3>
+                        <img src="imgs/01-stickers.jpg" alt="Preview projeto Figurinhas">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_figurinhas_desc">Gerador de figurinhas personalizadas para Whatsapp, com opção de salvar no dispositivo.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_figurinhas_foco">Foco: Manipulação de DOM, CSS e bibliotecas externas.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/stickers/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/stickers" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
 
-    <div class="cont_projetos" id="projetos">
-        <h2 class="title" data-i18n="projetosM">PROJETOS</h2>
-        <div class="projetos-itens">
-            <div class="projeto-item">
-                <div class="projeto-tile">
-                    <h3 data-i18n="figurinhas">Figurinhas</h3>
-                    <img src="imgs/01-stickers.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="figdesc">O usuário pode gerar uma figurinha para exportar e salvar no dispositivo e usar como figurinha de Whatsapp.</p>
-                    <p data-i18n="figfoco">Foco do estudo: manipulação do DOM através do JS, CSS e importação de biblioteca JS para exportar o resultado.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/stickers/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/stickers" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3 data-i18n="relogio_digital">Relógio Digital</h3>
-                    <img src="imgs/02-relogiodigital.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="reldesc">Um relógio digital simples, com fundo e mensagem de saudação interativos conforme o horário.</p>
-                    <p data-i18n="relfoco">Foco do estudo: manipulação do DOM através do JS, CSS, e condicionais dentro do JS.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/relogioDigital/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/relogioDigital" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3 data-i18n="tempo">Tempo Agora</h3>
-                    <img src="imgs/03-tempoagora.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="temdesc">Site para consultar o clima e tempo na cidade que o usuário digitar.</p>
-                    <p data-i18n="temfoco">Foco do estudo: manipulação do DOM através do JS e CSS, e consumo de API de consulta de tempo na cidade consultada.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/tempoAgora/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/tempoAgora" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3>Jhow Ken Pow! </h3>
-                    <img src="imgs/04-jokenpo.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="jokendesc">Jogo interativo de pedra, papel e tesoura, onde o resultado sempre vai ser diferente, e o usuário pode ter chances reais de perdas e ganhos.</p>
-                    <p data-i18n="jokenfoco">Foco do estudo: manipulação do DOM através do JS e CSS, com condicional como lógica no JS para gerar o sorteio de escolha que a máquina joga.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/jhowKenPow/" target="_blank" data-i18n="link">Link para jogar</a>
-                    <a href="https://github.com/simonntech/jhowKenPow" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3>myCATS</h3>
-                    <img src="imgs/05-mycats.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="catsdesc">Uma lista interativa estilo 'coisas à fazer', porém com nomes de gatos que podem ser excluídos e alterados.</p>
-                    <p data-i18n="catsfoco">Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/myCats/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/myCats" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3>myDOGS</h3>
-                    <img src="imgs/06-mydogs.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="dogsdesc">Uma lista interativa estilo 'coisas à fazer', porém com nomes de cachorros que podem ser excluídos e alterados.</p>
-                    <p data-i18n="dogsfoco">Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/myDogs/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/myDogs" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3>LotoGen</h3>
-                    <img src="imgs/07-lotogen.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="lotodesc">Sisteminha para criação e gerenciamento de números de jogos da Loteria mais famosos, como Mega-Sena, Quina e Lotomania. O usuário também pode salvar os jogos localmente no navegador.</p>
-                    <p data-i18n="lotofoco">Foco do estudo: Javascript avançado, com modulação de funções, criação de listas e uso do método LocalStorage para armazenar conteúdo no próprio navegador do usuário, dispensando uso de API e banco de dados.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntech.github.io/lotoGen/" target="_blank" data-i18n="link">Link para acessar</a>
-                    <a href="https://github.com/simonntech/lotoGen/tree/main" target="_blank" data-i18n="github">Repositório do Github</a>
-                </div>
-            </div>
-            <div class="projeto-item">
-                <div class="projeto-title">
-                    <h3>Simon Tech - News</h3>
-                    <img src="imgs/08-portal.jpg">
-                </div>
-                <div class="projeto-desc">
-                    <p data-i18n="newsdesc">Portal de notícias sobre tecnologia, com conteúdos periódicos. Case para gerenciamento de conteúdo rápido através de Wordpress.</p>
-                    <p data-i18n="newsfoco">Foco do estudo: gerenciamento de conteúdo e temas de customização de Wordpress.</p>
-                </div>
-                <div class="projeto-links">
-                    <a href="https://simonntechnews.rf.gd/" target="_blank" data-i18n="link">Link para acessar</a>
-                </div>
-            </div>
-        </div>
-    </div>
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3 data-i18n="proj_relogio_titulo">Relógio Digital</h3>
+                        <img src="imgs/02-relogiodigital.jpg" alt="Preview projeto Relógio">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_relogio_desc">Relógio com interface dinâmica que muda a saudação e o fundo conforme o horário.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_relogio_foco">Foco: Condicionais JS e estilização dinâmica.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/relogioDigital/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/relogioDigital" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
 
-    <h2 class="title" data-i18n="contatoM">CONTATO</h2>
-    <div class="cont_contato" id="contato">
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3 data-i18n="proj_tempo_titulo">Tempo Agora</h3>
+                        <img src="imgs/03-tempoagora.jpg" alt="Preview projeto Tempo Agora">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_tempo_desc">Consulte o clima em tempo real de qualquer cidade do mundo.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_tempo_foco">Foco: Consumo de API (Fetch) e assincronismo.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/tempoAgora/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/tempoAgora" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
+
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3>Jhow Ken Pow!</h3>
+                        <img src="imgs/04-jokenpo.jpg" alt="Preview projeto Jokenpo">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_jokenpo_desc">O clássico Pedra, Papel e Tesoura contra a máquina com resultados aleatórios.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_jokenpo_foco">Foco: Lógica de jogo e interatividade.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/jhowKenPow/" target="_blank" data-i18n="btn_jogar">Jogar</a>
+                        <a href="https://github.com/simonntech/jhowKenPow" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
+
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3>myCATS</h3>
+                        <img src="imgs/05-mycats.jpg" alt="Preview projeto myCATS">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_cats_desc">Gerenciador de lista interativa (CRUD simples) com temática de gatos.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_cats_foco">Foco: Manipulação de Arrays e eventos.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/myCats/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/myCats" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
+
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3>myDOGS</h3>
+                        <img src="imgs/06-mydogs.jpg" alt="Preview projeto myDOGS">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_dogs_desc">Lista interativa para gerenciar nomes, similar ao myCATS.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_dogs_foco">Foco: Reforço de lógica de manipulação de listas.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/myDogs/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/myDogs" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
+
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3>LotoGen</h3>
+                        <img src="imgs/07-lotogen.jpg" alt="Preview projeto LotoGen">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_loto_desc">Gerador e gerenciador de números para loterias (Mega-Sena, Quina, etc) com salvamento local.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_loto_foco">Foco: LocalStorage, funções modulares e lógica avançada.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntech.github.io/lotoGen/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                        <a href="https://github.com/simonntech/lotoGen/tree/main" target="_blank" data-i18n="btn_repo">Repositório</a>
+                    </div>
+                </article>
+
+                <article class="projeto-item">
+                    <div class="projeto-tile">
+                        <h3>Simon Tech - News</h3>
+                        <img src="imgs/08-portal.jpg" alt="Preview projeto News">
+                    </div>
+                    <div class="projeto-desc">
+                        <p data-i18n="proj_news_desc">Portal de notícias tech. Um case de implementação rápida com Wordpress.</p>
+                        <p class="foco-estudo"><small data-i18n="proj_news_foco">Foco: Gerenciamento de CMS e temas customizados.</small></p>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://simonntechnews.rf.gd/" target="_blank" data-i18n="btn_acessar">Acessar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="cont_contato">
+        <h2 class="title" data-i18n="titulo_contato">CONTATO</h2>
         <div class="contatos">
-                <div class="contato-item">
-                    <a href="mailto:contato.simon.tech@gmail.com?subject=Visitei seu portfólio e quero entrar em contato" target="_blank">
-                        <h3><img src="imgs/email.png">E-mail</h3>
-                    </a>
-                    <a href="https://wa.link/zcwy8c" target="_blank">
-                        <h3><img src="imgs/whatsapp.png"> Whatsapp</h3>
-                    </a>
-                </div>
+            <div class="contato-item">
+                <a href="mailto:contato.simon.tech@gmail.com?subject=Contato via Portfólio" target="_blank">
+                    <h3><img src="imgs/email.png" alt="Ícone Email"> E-mail</h3>
+                </a>
+                <a href="https://wa.link/zcwy8c" target="_blank">
+                    <h3><img src="imgs/whatsapp.png" alt="Ícone Whatsapp"> Whatsapp</h3>
+                </a>
+            </div>
         </div>
         <div class="infos">
-            <p>&copy;<em data-i18n="rodape">Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2026</em></p>
+            <p>&copy; <span data-i18n="rodape">Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2026</span></p>
         </div>
-    </div>
+    </footer>
 
-<script src="index.js"></script>
-    
+    <script src="index.js"></script>
 </body>
 </html>

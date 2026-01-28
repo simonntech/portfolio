@@ -3,103 +3,150 @@ function toggleMenu() {
     nav.classList.toggle("show");
 };
 
+// Fechar menu ao clicar em um link
 document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('nav_menu').classList.remove('show');
     });
 })
 
-// tradução interativa com botão
-
+// === SISTEMA DE TRADUÇÃO ===
 const translations = {
     pt: {
-        eng: "English",
-        sobre: "Sobre",
-        tecnologias: "Tecnologias",
-        projetos: "Projetos",
-        contato: "Contato",
-        noticias: "Notícias Tech",
-        quem_sou: "QUEM SOU EU?",
-        apresentacao: "Oi! Eu sou o Bruno, desenvolvedor WEB, estudante de Desenvolvimento de Sistemas na <a href='https://fundacaofat.org.br/' target='_blank'>Fundação FAT</a>, e Engenharia de Software na <a href='https://www.ampli.com.br/'>AMPLI</a>.",
-        atuacao: "Atuei como Designer Gráfico Freelancer entre 2016 e 2021, e Ilustrador freelancer desde 2017 até 2022, e até então como hobbie. Com essa bagagem artística, meu foco no desenvolvimento é no <em>front-end</em>, trazendo conceitos do Design e da Arte, para deixar os sites e sistemas mais agradáveis.",
-        backend: "Sigo com estudos dos conhecimentos de <em>back-end</em> e banco de dados para me tornar um <em>Desenvolver Fullstack</em> Javascript, através de bibliotecas e frameworks mais robustos, como <em>React JS, NODE JS</em> e etc...",
-        wordpress: "Consigo também entregar soluções mais rápidas e completas através de sistemas alternativos como Wordpress para gerenciamento de conteúdos.",
-        tecnologiasM: "TECNOLOGIAS",
-        design: "Design Gráfico",
-        projetosM: "PROJETOS",
-        figurinhas: "Figurinhas",
-        figdesc: "O usuário pode gerar uma figurinha para exportar e salvar no dispositivo e usar como figurinha de Whatsapp.",
-        figfoco: "Foco do estudo: manipulação do DOM através do JS, CSS e importação de biblioteca JS para exportar o resultado.",
-        link: "Link para acessar",
-        github: "Repositório do Github",
-        relogio_digital: "Relógio Digital",
-        reldesc: "Um relógio digital simples, com fundo e mensagem de saudação interativos conforme o horário.",
-        relfoco: "Foco do estudo: manipulação do DOM através do JS, CSS, e condicionais dentro do JS.",
-        tempo: "Tempo Agora",
-        temdesc: "Site para consultar o clima e tempo na cidade que o usuário digitar.",
-        temfoco: "Foco do estudo: manipulação do DOM através do JS e CSS, e consumo de API de consulta de tempo na cidade consultada.",
-        jokendesc: "Jogo interativo de pedra, papel e tesoura, onde o resultado sempre vai ser diferente, e o usuário pode ter chances reais de perdas e ganhos.",
-        jokenfoco: "Foco do estudo: manipulação do DOM através do JS e CSS, com condicional como lógica no JS para gerar o sorteio de escolha que a máquina joga.",
-        catsdesc: "Uma lista interativa estilo 'coisas à fazer', porém com nomes de gatos que podem ser excluídos e alterados.",
-        catsfoco: "Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.",
-        dogsdesc: "Uma lista interativa estilo 'coisas à fazer', porém com nomes de cachorros que podem ser excluídos e alterados.",
-        dogsfoco: "Foco do estudo: manipulação no DOM, e lógica de gerenciamento de listas através do JS.",
-        lotodesc: "Sisteminha para criação e gerenciamento de números de jogos da Loteria mais famosos, como Mega-Sena, Quina e Lotomania. O usuário também pode salvar os jogos localmente no navegador.",
-        lotofoco: "Foco do estudo: Javascript avançado, com modulação de funções, criação de listas e uso do método LocalStorage para armazenar conteúdo no próprio navegador do usuário, dispensando uso de API e banco de dados.",
-        newsdesc: "Portal de notícias sobre tecnologia, com conteúdos periódicos. Case para gerenciamento de conteúdo rápido através de Wordpress.",
-        newsfoco: "Foco do estudo: gerenciamento de conteúdo e temas de customização de Wordpress.",
-        contatoM: "CONTATO",
-        rodape: "Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2025"
+        // Navegação
+        btn_lang: "English",
+        nav_sobre: "Sobre",
+        nav_tecnologias: "Tecnologias",
+        nav_projetos: "Projetos",
+        nav_contato: "Contato",
+        nav_noticias: "Notícias Tech",
+
+        // Sobre Mim (Com seu nome Bruno Simon)
+        titulo_sobre: "SOBRE MIM",
+        bio_intro: "Olá! Sou o <strong>Bruno Simon</strong>, um entusiasta da tecnologia trilhando o caminho do desenvolvimento WEB.",
+        bio_background: "Minha jornada começou na arte, atuando como Designer Gráfico e Ilustrador. Hoje, trago essa bagagem visual para o <em>Front-end</em>, criando interfaces agregando valor.",
+        bio_estudos: "Atualmente, sou aluno do curso de Engenharia de Software. Meu foco é me tornar um <em>Fullstack</em> completo, dominando o universo Javascript (React, Node.js) e bancos de dados.",
+        bio_extra: "Também desenvolvo soluções ágeis utilizando WordPress para gerenciamento de conteúdo.",
+        btn_github: "Confira meu Github",
+
+        // Tecnologias
+        titulo_tecnologias: "TECNOLOGIAS",
+        tec_design: "Design Gráfico",
+
+        // Projetos (Genéricos e Específicos)
+        titulo_projetos: "PROJETOS",
+        btn_acessar: "Acessar Projeto",
+        btn_repo: "Repositório",
+        btn_jogar: "Jogar Agora",
+
+        // Descrições dos Projetos
+        proj_figurinhas_titulo: "Figurinhas",
+        proj_figurinhas_desc: "Gerador de figurinhas personalizadas para Whatsapp, com opção de salvar no dispositivo.",
+        proj_figurinhas_foco: "Foco: Manipulação de DOM, CSS e bibliotecas externas.",
+
+        proj_relogio_titulo: "Relógio Digital",
+        proj_relogio_desc: "Relógio com interface dinâmica que muda a saudação e o fundo conforme o horário.",
+        proj_relogio_foco: "Foco: Condicionais JS e estilização dinâmica.",
+
+        proj_tempo_titulo: "Tempo Agora",
+        proj_tempo_desc: "Consulte o clima em tempo real de qualquer cidade do mundo.",
+        proj_tempo_foco: "Foco: Consumo de API (Fetch) e assincronismo.",
+        
+        proj_jokenpo_desc: "O clássico Pedra, Papel e Tesoura contra a máquina com resultados aleatórios.",
+        proj_jokenpo_foco: "Foco: Lógica de jogo e interatividade.",
+
+        proj_cats_desc: "Gerenciador de lista interativa (CRUD simples) com temática de gatos.",
+        proj_cats_foco: "Foco: Manipulação de Arrays e eventos.",
+
+        proj_dogs_desc: "Lista interativa para gerenciar nomes, similar ao myCATS.",
+        proj_dogs_foco: "Foco: Reforço de lógica de manipulação de listas.",
+
+        proj_loto_desc: "Gerador e gerenciador de números para loterias (Mega-Sena, Quina, etc) com salvamento local.",
+        proj_loto_foco: "Foco: LocalStorage, funções modulares e lógica avançada.",
+
+        proj_news_desc: "Portal de notícias tech. Um case de implementação rápida com Wordpress.",
+        proj_news_foco: "Foco: Gerenciamento de CMS e temas customizados.",
+
+        // Rodapé
+        titulo_contato: "CONTATO",
+        rodape: "Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2026"
     },
 
     en: {
-        eng: "Português-BR",
-        sobre: "About",
-        tecnologias: "Technologies",
-        projetos: "Projects",
-        contato: "Contact",
-        noticias: "Tech News",
-        quem_sou: "WHO AM I?",
-        apresentacao: "Hi! I'm Bruno, a WEB developer, student of Systems Development at <a href='https://fundacaofat.org.br/' target='_blank'>Fundação FAT</a>, and Software Engineering at <a href='https://www.ampli.com.br/'>AMPLI</a>.",
-        atuacao: "I worked as a Freelance Graphic Designer between 2016 and 2021, and as a freelance Illustrator from 2017 to 2022, and since then as a hobby. With this artistic background, my focus in development is on the <em>front-end</em>, bringing concepts from Design and Art to make websites and systems more pleasant.",
-        backend: "I continue studying <em>back-end</em> and database knowledge to become a Javascript <em>Fullstack Developer</em>, using more robust libraries and frameworks such as <em>React JS, NODE JS</em>, etc.",
-        wordpress: "I can also deliver faster and more complete solutions through alternative systems like WordPress for content management.",
-        tecnologiasM: "TECHNOLOGIES",
-        design: "Graphic Design",
-        projetosM: "PROJECTS",
-        figurinhas: "Stickers",
-        figdesc: "The user can generate a sticker to export and save on the device to use as a WhatsApp sticker.",
-        figfoco: "Study focus: DOM manipulation through JS, CSS, and importing a JS library to export the result.",
-        link: "Access link",
-        github: "GitHub repository",
-        relogio_digital: "Digital Clock",
-        reldesc: "A simple digital clock with an interactive background and greeting message based on the time of day.",
-        relfoco: "Study focus: DOM manipulation through JS, CSS, and conditionals within JS.",
-        tempo: "Current Weather",
-        temdesc: "Website to check the weather in the city entered by the user.",
-        temfoco: "Study focus: DOM manipulation through JS and CSS, and consumption of a weather API for the queried city.",
-        jokendesc: "Interactive rock-paper-scissors game, where the result is always different, and the user has real chances of winning or losing.",
-        jokenfoco: "Study focus: DOM manipulation through JS and CSS, with conditional logic in JS to generate the random choice played by the machine.",
-        catsdesc: "An interactive 'to-do list' style list, but with cat names that can be deleted and edited.",
-        catsfoco: "Study focus: DOM manipulation and list management logic through JS.",
-        dogsdesc: "An interactive 'to-do list' style list, but with dog names that can be deleted and edited.",
-        dogsfoco: "Study focus: DOM manipulation and list management logic through JS.",
-        lotodesc: "A small system to create and manage lottery game numbers, such as Mega-Sena, Quina, and Lotomania. The user can also save the games locally in the browser.",
-        lotofoco: "Study focus: Advanced JavaScript, with function modularization, list creation, and use of the LocalStorage method to store content in the user's own browser, eliminating the need for an API or database.",
-        newsdesc: "News portal about technology, with periodic content. A case for fast content management through WordPress.",
-        newsfoco: "Study focus: WordPress content management and theme customization.",
-        contatoM: "CONTACT",
-        rodape: "Portfolio developed by BRUNO SIMON FERREIRA - 2025"
+        // Navigation
+        btn_lang: "Português-BR",
+        nav_sobre: "About",
+        nav_tecnologias: "Tech Stack",
+        nav_projetos: "Projects",
+        nav_contato: "Contact",
+        nav_noticias: "Tech News",
+
+        // About Me
+        titulo_sobre: "ABOUT ME",
+        bio_intro: "Hi! I'm <strong>Bruno Simon</strong>, a tech enthusiast walking the path of WEB development.",
+        bio_background: "My journey started in arts as a Graphic Designer and Illustrator. Today, I bring this visual background to the <em>Front-end</em>, creating interfaces that add value.",
+        bio_estudos: "I'm currently studying Software Engineering. My goal is to become a full <em>Fullstack Developer</em>, mastering the Javascript universe (React, Node.js) and databases.",
+        bio_extra: "I also deliver agile solutions using WordPress for content management.",
+        btn_github: "Check my Github",
+
+        // Technologies
+        titulo_tecnologias: "TECHNOLOGIES",
+        tec_design: "Graphic Design",
+
+        // Projects
+        titulo_projetos: "PROJECTS",
+        btn_acessar: "View Project",
+        btn_repo: "Repository",
+        btn_jogar: "Play Now",
+
+        // Project Descriptions
+        proj_figurinhas_titulo: "Stickers",
+        proj_figurinhas_desc: "Custom WhatsApp sticker generator, with an option to save to the device.",
+        proj_figurinhas_foco: "Focus: DOM manipulation, CSS, and external libraries.",
+
+        proj_relogio_titulo: "Digital Clock",
+        proj_relogio_desc: "A clock with a dynamic interface that changes the greeting and background based on time.",
+        proj_relogio_foco: "Focus: JS conditionals and dynamic styling.",
+
+        proj_tempo_titulo: "Current Weather",
+        proj_tempo_desc: "Check real-time weather for any city in the world.",
+        proj_tempo_foco: "Focus: API consumption (Fetch) and async logic.",
+        
+        proj_jokenpo_desc: "Classic Rock, Paper, Scissors against the machine with random results.",
+        proj_jokenpo_foco: "Focus: Game logic and interactivity.",
+
+        proj_cats_desc: "Interactive list manager (simple CRUD) with a cat theme.",
+        proj_cats_foco: "Focus: Array manipulation and events.",
+
+        proj_dogs_desc: "Interactive name manager list, similar to myCATS.",
+        proj_dogs_foco: "Focus: Reinforcing list manipulation logic.",
+
+        proj_loto_desc: "Lottery number generator and manager (Mega-Sena, etc.) with local save.",
+        proj_loto_foco: "Focus: LocalStorage, modular functions, and advanced logic.",
+
+        proj_news_desc: "Tech news portal. A case of fast implementation with WordPress.",
+        proj_news_foco: "Focus: CMS management and custom themes.",
+
+        // Footer
+        titulo_contato: "CONTACT",
+        rodape: "Portfolio developed by BRUNO SIMON FERREIRA - 2026"
     }
 }
 
 let currentLang = "pt";
+const langToggleBtn = document.getElementById("langToggle");
 
-document.getElementById("langToggle").addEventListener("click", () => {
+langToggleBtn.addEventListener("click", () => {
     currentLang = currentLang === "pt" ? "en" : "pt";
+    
+    // Atualiza o texto do botão
+    langToggleBtn.textContent = translations[currentLang].btn_lang;
 
+    // Atualiza todos os textos com data-i18n
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        el.innerHTML = translations[currentLang][key]
+        if (translations[currentLang][key]) {
+            el.innerHTML = translations[currentLang][key];
+        }
     })
-})
+});
