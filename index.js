@@ -67,6 +67,9 @@ const translations = {
         proj_news_desc: "Portal de notícias tech. Um case de implementação rápida com Wordpress.",
         proj_news_foco: "Foco: Gerenciamento de CMS e temas customizados.",
 
+        taxa_desc: "Aplicação simples que tem os valores de taxas e informações das atividades licenciadas pela Vigilância Sanitária do municiípio de Andradina-SP.",
+        taxa_foco: "Foco: Manipulação de dados públicos e apresentação em interface amigável.",
+
         // Rodapé
         titulo_contato: "CONTATO",
         rodape: "Portfólio desenvolvido por BRUNO SIMON FERREIRA - 2026"
@@ -126,6 +129,9 @@ const translations = {
 
         proj_news_desc: "Tech news portal. A case of fast implementation with WordPress.",
         proj_news_foco: "Focus: CMS management and custom themes.",
+
+        taxa_desc: "Simple application that provides rate values and information about activities licensed by the Health Surveillance of the municipality of Andradina-SP.",
+        taxa_foco: "Focus: Public data manipulation and presentation in a user-friendly interface.",
 
         // Footer
         titulo_contato: "CONTACT",
