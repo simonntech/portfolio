@@ -112,6 +112,11 @@ a.news {
     margin: 20px;
 }
 
+.avatar_img {
+    width: 280px;
+    margin: 0 auto;
+}
+
 .cont_avatar {
     display: flex;
     gap: 40px;
