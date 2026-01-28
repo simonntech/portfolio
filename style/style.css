@@ -146,13 +146,6 @@ a.news:hover {
     margin: 80px auto 20px auto;
 }
 
-.linksUteis {
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .btngit {
     background-color: var(--emphasisColor);
     padding: 4px;
