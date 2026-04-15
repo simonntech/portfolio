@@ -1,36 +1,22 @@
-function Skills() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "TypeScript",
-    "MySQL",
-    "PostgreSQL",
-    "Git"
-  ];
-
+function Plus() {
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-950">
+    <section id="plus" className="py-20 px-4 bg-slate-950">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-10 text-purple-400">
-          Habilidades
+          Adicionais
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4">
-          {skills.map((skill, index) => (
-            <span
-              key={index}
-              className="bg-slate-800 px-4 py-2 rounded-2xl"
-            >
-              {skill}
-            </span>
-          ))}
+          <ul className="flex flex-col gap-6">
+            <li><strong>✓ Arte e Criatividade</strong>: Design de interfaces e criação de conteúdo visual impactante.</li>
+            <li><strong>✓ Comunicação Ativa</strong>: Comunicação eficaz e ativa com o cliente durante todo o processo.</li>
+            <li><strong>✓ UI/UX Design</strong>: Criação de experiências de usuário intuitivas e atraentes.</li>
+            <li><strong>✓ Desenvolvimento Web</strong>: Construção de aplicações web modernas e responsivas.</li>
+          </ul>
         </div>
       </div>
     </section>
   );
 }
 
-export default Skills;
+export default Plus;

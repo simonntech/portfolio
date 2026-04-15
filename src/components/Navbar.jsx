@@ -16,7 +16,7 @@ function Navbar() {
           <a href="#about" className="hover:text-purple-400 hover:underline">Sobre</a>
           <a href="#services" className="hover:text-purple-400 hover:underline">Serviços</a>
           <a href="#portfolio" className="hover:text-purple-400 hover:underline">Portfólio</a>
-          <a href="#skills" className="hover:text-purple-400 hover:underline">Habilidades</a>
+          <a href="#plus" className="hover:text-purple-400 hover:underline">Adicionais</a>
           <a href="#contact" className="hover:text-purple-400 hover:underline">Contato</a>
         </div>
 
@@ -47,6 +47,10 @@ function Navbar() {
 
           <a href="#projects" onClick={toggleMenu}>
             Projetos
+          </a>
+
+          <a href="#plus" onClick={toggleMenu}>
+            Adicionais
           </a>
 
           <a href="#contact" onClick={toggleMenu}>
