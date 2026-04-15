@@ -2,6 +2,7 @@ import profilePic from "../assets/profile.jpg";
 import reactIcon from "../assets/react.png";
 import nodeIcon from "../assets/node.png";
 import wordpressIcon from "../assets/wordpress.png";
+import mySQLIcon from "../assets/mysql.png";
 
 function About() {
   return (
@@ -31,18 +32,19 @@ function About() {
           </p>
 
           <div className="bg-slate-900 p-6 rounded-2xl text-center">
-            <h3 className="text-xl font-semibold mb-4 text-purple-400">
+            <h3 className="text-3xl font-semibold mb-4 text-purple-400">
               Tecnologias
             </h3>
 
             <ul className="space-y-2 text-gray-300">
-              <p>Utilizo tecnologias como <strong>React</strong> e <strong>Tailwind CSS</strong> no frontend, <strong>Node.js</strong> e <strong>TypeScript</strong> no backend para criar aplicações modernas e eficientes, e uma integração segura com bancos de dados.</p>
-              <div className="flex justify-center space-x-4">
+              <p>Utilizo tecnologias como <strong>React</strong> e <strong>Tailwind CSS</strong> no frontend, <strong>Node.js</strong> e <strong>TypeScript</strong> no backend para criar aplicações modernas e eficientes, e uma integração segura com bancos de dados local ou em nuvem.</p>
+              <div className="flex justify-center space-x-4 my-8">
                 <img src={reactIcon} alt="React" className="w-8 h-8" />
                 <img src={nodeIcon} alt="Node.js" className="w-8 h-8" />
                 <img src={wordpressIcon} alt="WordPress" className="w-8 h-8" />
+                <img src={mySQLIcon} alt="MySQL" className="w-8 h-8" />
               </div>
-              <p>Também trabalho com tecnologias de gerenciamento de conteúdo rápido, como <strong>Wordpress</strong> para soluções <strong>custo-benefício</strong>.</p>
+              <p>Também trabalho com ferramentas de gerenciamento de conteúdo rápido, como <strong>Wordpress</strong> para soluções <strong>custo-benefício</strong>.</p>
             </ul>
           </div>
         </div>
