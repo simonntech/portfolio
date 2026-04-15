@@ -19,7 +19,7 @@ function About() {
           <h2 className="text-3xl font-bold mb-4 text-purple-400">Sobre Mim</h2>
 
           <p className="font-bold text-lg mb-2">
-            Bruno Simon Ferreira | Designer, Desenvolvedor Web e Apaixonado por Tecnologia.
+            Bruno Simon Ferreira | <span className="italic font-thin text-purple-400">Desenvolvedor Web, Apaixonado por Arte e Tecnologia</span>
           </p>
 
           <p className="text-gray-300 leading-relaxed mb-6">
