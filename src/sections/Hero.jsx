@@ -17,7 +17,7 @@ function Hero() {
         <source src={videoBackground} type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-black/50 z-10 bg-linear-to-b from-transparent to-slate-800"></div>
+      <div className="absolute inset-0 bg-black/70 z-10 bg-linear-to-b from-transparent to-slate-900"></div>
 
       <div className="relative z-20 max-w-4xl text-center space-y-6 flex flex-col items-center justify-center ">
         <img src={logo} alt="Logo SIMONN TECH" className="w-56 md:w-80" />

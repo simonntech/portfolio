@@ -8,16 +8,16 @@ function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 w-full bg-slate-900 shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-slate-950 shadow-lg z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-        <div className="hidden md:flex gap-6 text-sm">
-          <a href="#home" className="hover:text-purple-400">Início</a>
-          <a href="#about" className="hover:text-purple-400">Sobre</a>
-          <a href="#services" className="hover:text-purple-400">Serviços</a>
-          <a href="#portfolio" className="hover:text-purple-400">Portfólio</a>
-          <a href="#skills" className="hover:text-purple-400">Habilidades</a>
-          <a href="#contact" className="hover:text-purple-400">Contato</a>
+        <div className="hidden md:flex gap-6">
+          <a href="#home" className="hover:text-purple-400 hover:underline">Início</a>
+          <a href="#about" className="hover:text-purple-400 hover:underline">Sobre</a>
+          <a href="#services" className="hover:text-purple-400 hover:underline">Serviços</a>
+          <a href="#portfolio" className="hover:text-purple-400 hover:underline">Portfólio</a>
+          <a href="#skills" className="hover:text-purple-400 hover:underline">Habilidades</a>
+          <a href="#contact" className="hover:text-purple-400 hover:underline">Contato</a>
         </div>
 
         <button
@@ -31,7 +31,7 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-slate-900 p-4 flex flex-col gap-4 divide-y divide-slate-700">
+        <div className="md:hidden bg-slate-950 p-4 flex flex-col gap-4 divide-y divide-slate-700">
 
           <a href="#home" onClick={toggleMenu}>
             Início

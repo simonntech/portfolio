@@ -21,7 +21,7 @@ function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-20 px-4 bg-slate-800">
+    <section id="portfolio" className="py-20 px-4 bg-slate-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-purple-400">
           Portfólio de Projetos
@@ -31,7 +31,7 @@ function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-900 p-6 rounded-2xl shadow-lg"
+              className="bg-slate-950 p-6 rounded-2xl shadow-lg"
             >
               <h3 className="text-xl font-semibold mb-2">
                 {project.name}

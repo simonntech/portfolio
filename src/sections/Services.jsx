@@ -18,7 +18,7 @@ function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 bg-slate-900">
+    <section id="services" className="py-20 px-4 bg-slate-950">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-purple-400">
           Serviços
@@ -28,7 +28,7 @@ function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-slate-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition"
+              className="bg-slate-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition"
             >
               <h3 className="text-xl font-semibold mb-3">
                 {service.title}
