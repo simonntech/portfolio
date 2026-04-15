@@ -31,7 +31,7 @@ function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-950 p-6 rounded-2xl shadow-lg"
+              className="bg-slate-950 p-6 rounded-2xl"
             >
               <h3 className="text-xl font-semibold mb-2">
                 {project.name}

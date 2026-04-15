@@ -22,7 +22,7 @@ function Skills() {
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="bg-slate-800 px-4 py-2 rounded-2xl shadow"
+              className="bg-slate-800 px-4 py-2 rounded-2xl"
             >
               {skill}
             </span>

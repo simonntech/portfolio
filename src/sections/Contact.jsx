@@ -27,7 +27,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 p-3 rounded-2xl shadow-lg"
+            className="w-full bg-purple-600 hover:bg-purple-700 p-3 rounded-2xl"
           >
             Enviar Mensagem
           </button>
