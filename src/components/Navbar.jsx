@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="fixed top-0 w-full bg-slate-950 shadow-lg z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-        <div className="hidden md:flex gap-6">
+        <div className="hidden md:flex gap-8 font-medium">
           <a href="#home" className="hover:text-purple-400 hover:underline">Início</a>
           <a href="#about" className="hover:text-purple-400 hover:underline">Sobre</a>
           <a href="#services" className="hover:text-purple-400 hover:underline">Serviços</a>
