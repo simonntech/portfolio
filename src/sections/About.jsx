@@ -1,4 +1,7 @@
 import profilePic from "../assets/profile.jpg";
+import reactIcon from "../assets/react.png";
+import nodeIcon from "../assets/node.png";
+import wordpressIcon from "../assets/wordpress.png";
 
 function About() {
   return (
@@ -15,26 +18,31 @@ function About() {
           <h2 className="text-3xl font-bold mb-4 text-purple-400">Sobre Mim</h2>
 
           <p className="font-bold text-lg mb-2">
-            Meu nome é Bruno Simon Ferreira
+            Bruno Simon Ferreira | Designer, Desenvolvedor Web e Apaixonado por Tecnologia.
           </p>
 
           <p className="text-gray-300 leading-relaxed mb-6">
-            Sou desenvolvedor web focado em criar aplicações modernas,
+            Com uma história e bagagem do mundo da arte e design gráfico desde 2016, me encontrei no desenvolvimento de sites, sistemas e soluções digitais desde 2025. Minha paixão por tecnologia e criatividade me levou a explorar o mundo do desenvolvimento web, onde posso combinar minhas habilidades artísticas com a lógica da programação para criar experiências digitais únicas e impactantes.
+          </p>
+          <p className="text-gray-300 leading-relaxed mb-6">
+            Sou Desenvolvedor Web focado em criar aplicações modernas,
             funcionais e de fácil manutenção. Trabalho com tecnologias atuais
             para entregar soluções eficientes e escaláveis.
           </p>
 
-          <div className="bg-slate-900 p-6 rounded-2xl">
+          <div className="bg-slate-900 p-6 rounded-2xl text-center">
             <h3 className="text-xl font-semibold mb-4 text-purple-400">
               Tecnologias
             </h3>
 
             <ul className="space-y-2 text-gray-300">
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>TypeScript</li>
-              <li>PostgreSQL</li>
+              <p>Utilizo tecnologias como <strong>React</strong> e <strong>Tailwind CSS</strong> no frontend, <strong>Node.js</strong> e <strong>TypeScript</strong> no backend para criar aplicações modernas e eficientes, e uma integração segura com bancos de dados.</p>
+              <div className="flex justify-center space-x-4">
+                <img src={reactIcon} alt="React" className="w-8 h-8" />
+                <img src={nodeIcon} alt="Node.js" className="w-8 h-8" />
+                <img src={wordpressIcon} alt="WordPress" className="w-8 h-8" />
+              </div>
+              <p>Também trabalho com tecnologias de gerenciamento de conteúdo rápido, como <strong>Wordpress</strong> para soluções <strong>custo-benefício</strong>.</p>
             </ul>
           </div>
         </div>
