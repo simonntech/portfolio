@@ -1,22 +1,6 @@
-function Services() {
-  const services = [
-    {
-      title: "Criação de Sites",
-      description:
-        "Sites institucionais modernos, rápidos e responsivos para empresas."
-    },
-    {
-      title: "Sistemas Web",
-      description:
-        "Desenvolvimento de sistemas personalizados para gestão e automação."
-    },
-    {
-      title: "Manutenção",
-      description:
-        "Atualizações, melhorias e suporte contínuo para seu sistema."
-    }
-  ];
+import services from "../data/services";
 
+function Services() {
   return (
     <section id="services" className="py-20 px-4 bg-slate-950">
       <div className="max-w-6xl mx-auto">
@@ -30,9 +14,12 @@ function Services() {
               key={index}
               className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition"
             >
-              <h3 className="text-xl font-semibold mb-3">
-                {service.title}
-              </h3>
+              <img
+                src={service.imgPath}
+                alt={service.title}
+                className="w-full h-1/2 "
+              />
+              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
 
               <p className="text-gray-300">{service.description}</p>
             </div>

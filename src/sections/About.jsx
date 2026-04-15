@@ -3,12 +3,12 @@ import profilePic from "../assets/profile.jpg";
 function About() {
   return (
     <section id="about" className="py-15 px-4 bg-slate-900">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-5 items-center border-2 border-purple-400 rounded-2xl">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-5 p-2 items-center border-2 border-purple-400 rounded-2xl">
         <div className="flex justify-center">
           <img
             src={profilePic}
             alt="Foto de perfil"
-            className="rounded-4xl w-48 h-48 md:w-64 md:h-110 object-cover"
+            className="rounded-2xl w-48 h-52 md:w-64 md:h-110 object-cover"
           />
         </div>
         <div className="bg-slate-950 p-6 rounded-2xl">
