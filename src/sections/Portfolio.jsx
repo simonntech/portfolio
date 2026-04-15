@@ -18,6 +18,8 @@ function Portfolio() {
                 {project.name}
               </h3>
 
+              <img src={project.imgPath} alt={project.name} className="w-full h-auto mb-3" />
+
               <p className="text-gray-300 mb-3">
                 {project.description}
               </p>
@@ -25,6 +27,15 @@ function Portfolio() {
               <span className="text-sm text-purple-400">
                 {project.tech}
               </span>
+
+              <div className="mt-4 flex gap-4">
+                <a href={project.link} className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded" target="_blank" rel="noopener noreferrer">
+                  Ver Projeto
+                </a>
+                <a href={project.github} className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" target="_blank" rel="noopener noreferrer">
+                  Código Fonte
+                </a>
+              </div>
             </div>
           ))}
         </div>

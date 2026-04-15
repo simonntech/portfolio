@@ -14,7 +14,7 @@ const projects = [
       "Blog de tecnologia com notícias sobre tecnologias atuais, inteligência artificial, relatos de projetos e estudos. Construído e gerenciado com Wordpress.",
     imgPath: "../../src/assets/blog.jpg",
     link: "https://simonntechnews.rf.gd/",
-    github: "(não disponível)",
+    github: "#",
     tech: "Wordpress",
   },
   {
