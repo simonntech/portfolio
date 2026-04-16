@@ -45,8 +45,8 @@ function Navbar() {
             Serviços
           </a>
 
-          <a href="#projects" onClick={toggleMenu}>
-            Projetos
+          <a href="#portfolio" onClick={toggleMenu}>
+            Portfólio
           </a>
 
           <a href="#plus" onClick={toggleMenu}>

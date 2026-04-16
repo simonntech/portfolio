@@ -59,7 +59,7 @@ ${formData.mensagem}
 
   return (
     <section
-      id="contato"
+      id="contact"
       className="bg-slate-900 py-16 px-6"
     >
       <div className="max-w-3xl mx-auto">
