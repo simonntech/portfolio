@@ -6,7 +6,7 @@ import mySQLIcon from "../assets/mysql.png";
 
 function About() {
   return (
-    <section id="about" className="py-15 px-4 bg-slate-900">
+    <section id="about" className="py-15 px-4 bg-slate-800">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-5 p-2 items-center border-2 border-purple-400 rounded-2xl">
         <div className="flex justify-center">
           <img
@@ -31,7 +31,7 @@ function About() {
             para entregar soluções eficientes e escaláveis.
           </p>
 
-          <div className="bg-slate-900 p-6 rounded-2xl text-center">
+          <div className="bg-slate-800 p-6 rounded-2xl text-center">
             <h3 className="text-3xl font-semibold mb-4 text-purple-400">
               Tecnologias
             </h3>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import whatsappIcon from "../assets/whatsapp.png";
+import emailIcon from "../assets/email.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ ${formData.mensagem}
   return (
     <section
       id="contact"
-      className="bg-slate-900 py-16 px-6"
+      className="bg-slate-800 py-16 px-6"
     >
       <div className="max-w-3xl mx-auto">
 
@@ -89,7 +90,7 @@ ${formData.mensagem}
               w-full
               p-3
               rounded
-              bg-slate-800
+              bg-slate-700
               focus:outline-none
               focus:ring-2
               focus:ring-purple-600
@@ -107,7 +108,7 @@ ${formData.mensagem}
               w-full
               p-3
               rounded
-              bg-slate-800
+              bg-slate-700
               focus:outline-none
               focus:ring-2
               focus:ring-purple-600
@@ -125,7 +126,7 @@ ${formData.mensagem}
               w-full
               p-3
               rounded
-              bg-slate-800
+              bg-slate-700
               focus:outline-none
               focus:ring-2
               focus:ring-purple-600
@@ -163,6 +164,10 @@ ${formData.mensagem}
             onClick={handleEmailClick}
             className="
               w-full
+              flex
+              items-center
+              justify-center
+              gap-2
               bg-purple-600
               hover:bg-purple-700
               p-3
@@ -171,6 +176,13 @@ ${formData.mensagem}
               transition
             "
           >
+            
+            <img
+              src={emailIcon}
+              alt="E-mail"
+              className="w-5 h-5"
+            />
+
             Entrar em contato por E-mail
           </button>
         </form>

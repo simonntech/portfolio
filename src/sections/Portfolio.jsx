@@ -2,7 +2,7 @@ import projects from "../data/projects";
 
 function Portfolio() {
   return (
-    <section id="portfolio" className="py-20 px-4 bg-slate-900">
+    <section id="portfolio" className="py-20 px-4 bg-slate-800">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-purple-400">
           Portfólio de Projetos

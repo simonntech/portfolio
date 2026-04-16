@@ -12,7 +12,7 @@ function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition flex flex-col items-center justify-center"
+              className="bg-slate-800 p-6 rounded-2xl hover:scale-105 transition flex flex-col items-center justify-center"
             >
               <img
                 src={service.imgPath}
