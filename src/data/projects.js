@@ -2,6 +2,7 @@ import lotoGenImg from "../../src/assets/lotoGen.jpg";
 import taxasVisaImg from "../../src/assets/taxasVisa.png";
 import jhoKenPowImg from "../../src/assets/jhokenpow.jpg";
 import blogImg from "../../src/assets/blog.jpg";
+import docsVisaImg from "../../src/assets/docsVisa.png";
 import rpgSystemImg from "../../src/assets/rpg-system.jpg";
 
 const projects = [
@@ -49,6 +50,14 @@ const projects = [
     github: "https://github.com/simonntech/taxasVisa",
     tech: "HTML, CSS, JavaScript e Bootstrap",
   },
+  {
+    name: "Docs VISA - Andradina/SP",
+    description: "Sistema de consulta de documentos necessários para Licenças Sanitárias do Setor de Vigilância Sanitária de Andradina/SP, com interface web para fácil acesso.",
+    imgPath: docsVisaImg,
+    link: "https://simonntech.github.io/docsVisa/",
+    github: "https://github.com/simonntech/docsVisa",
+    tech: "Vite, React, Tailwind CSS",
+  }
 ];
 
 export default projects;
