@@ -4,8 +4,18 @@ import jhoKenPowImg from "../../src/assets/jhokenpow.jpg";
 import blogImg from "../../src/assets/blog.jpg";
 import docsVisaImg from "../../src/assets/docsVisa.png";
 import rpgSystemImg from "../../src/assets/rpg-system.jpg";
+import tejotinhaImg from "../../src/assets/tejotinha.png";
 
 const projects = [
+  {
+    name: "Tejotinha - TJSP-2026/2027",
+    description:
+      "Projeto de um site para o concurso TJSP 2026/2027, com informações sobre o concurso, dicas de estudo, notícias e materiais de apoio para os candidatos. O site foi desenvolvido com foco em acessibilidade e responsividade, garantindo uma boa experiência de navegação em diferentes dispositivos.",
+    imgPath: tejotinhaImg,
+    link: "https://simonntech.github.io/tejotinha/",
+    github: "https://github.com/simonntech/tejotinha",
+    tech: "Antigravity - Tailwind CSS, HTML, JavaScript",
+  },
   {
     name: "RPG - System",
     description: "Projeto de um criador de fichas de RPG simples, com interface web para facilitar a criação e organização de personagens para jogos de RPG. O sistema permite aos usuários criar fichas personalizadas, salvar os personagem em uma galeria, editar e excluir os personagens criados, assim como exportar a ficha em formato PDF para impressão ou compartilhamento.",
